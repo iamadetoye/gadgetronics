@@ -10,19 +10,20 @@ export const SmartHeading = styled.div`
   display: flex;
   flex-direction: column;
 
-  /* background-color: whitesmoke; */
 
   h3 {
     font-family: var(--font-heading);
     font-weight: 900;
   }
   span {
-    /* font-size: 1.6rem; */
-    font-weight: normal;
+    font-size: 1.6rem;
+    width: 85%;
+
+    font-weight: 400;
     font-family: var(--font-primary);
 
     display: block;
-    margin: 4rem 0;
+    margin: 5rem 0;
   }
   div {
     display: flex;
@@ -33,15 +34,16 @@ export const SmartHeading = styled.div`
     svg {
       background-color: var(--color-white);
       border-radius: 50%;
-      padding: 1.2rem;
-      height: 5rem;
-      width: 5rem;
+      padding: 1rem;
+      cursor: pointer;
+      height: 4rem;
+      width: 4rem;
       color: var(--color-grey-light-2);
       filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
 
       &:hover {
         color: var(--color-brand);
-        background-color: var(--color-grey-light);
+        background-color: var(--color-hover-bg);
       }
     }
   }
@@ -55,6 +57,7 @@ export const SmartBoxes = styled.div`
 `;
 
 export const SmartBox = styled.div`
+  position: relative;
   background-color: var(--color-white);
   width: 26rem;
   height: 30rem;
@@ -63,19 +66,57 @@ export const SmartBox = styled.div`
   border-radius: 10px;
 
   padding: 3rem;
+  button {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    border-radius: 2rem;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &:hover {
+      background-color: var(--color-brand-dark);
+    }
+  }
 `;
 
 export const SmartDetails = styled.div`
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  h4 {
+    color: var(--color-grey-light);
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+  }
+  a {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    &:hover {
+      color: var(--color-brand);
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 0.8rem;
+  }
 `;
 
 export const SmartImage = styled.div`
-  height: 12rem;
+  height: 9rem;
   text-align: center;
+  margin-bottom: 3.5rem;
   img {
-    height: 12rem;
-    width: fit-content;
+    height: 14rem;
+    width: 13rem;
     object-fit: contain;
+    object-position: top;
   }
 `;
 

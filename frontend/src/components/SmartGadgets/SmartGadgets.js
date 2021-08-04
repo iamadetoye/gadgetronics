@@ -45,7 +45,7 @@ const SmartGadgets = () => {
               <SmartDetails>
                 <h4>{smartGadgetBox.brandName}</h4>
                 <a href={smartGadgetBox.linkUrl}>{smartGadgetBox.linkLabel}</a>
-                <span>{smartGadgetBox.price}</span>
+                <p>{smartGadgetBox.price}</p>
               </SmartDetails>
               <button>
                 <Icon icon="clarity:shopping-cart-solid" />

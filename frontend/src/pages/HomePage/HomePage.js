@@ -14,6 +14,7 @@ import HeaderItems from '../../components/HeaderItems/HeaderItems';
 import Main from '../../components/Main/Main';
 import data from '../../data';
 import SmartGadgets from '../../components/SmartGadgets/SmartGadgets';
+import Blog from '../../components/Blog/Blog';
 
 const HomePage = () => {
   return (
@@ -54,6 +55,8 @@ const HomePage = () => {
 
       <Main />
       <SmartGadgets/>
+      <Blog />
+      <Main />
     </div>
   );
 };

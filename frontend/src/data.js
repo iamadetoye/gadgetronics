@@ -161,7 +161,7 @@ const data = {
   smartGadgets: [
     {
       _id: '_1',
-      image: '/images/smart-lock.png',
+      image: '/images/Alexa.png',
       brandName: 'Amazon',
       linkLabel: 'Alexa Echo Dot 3 Smart speaker',
       linkUrl: '/',
@@ -169,7 +169,7 @@ const data = {
     },
     {
       _id: '_2',
-      image: '/images/smart-lock.png',
+      image: '/images/bodycam.png',
       brandName: 'Motorolla',
       linkLabel: 'VB400 body worn smart camera',
       linkUrl: '/',
@@ -199,6 +199,32 @@ const data = {
     //   linkUrl: '/',
     //   price: '$21,900',
     // },
+  ],
+  blogPosts: [
+    {
+      _id: '1',
+      image: '/images/alexavsga.jpg',
+      linkLabel: 'Alexa vs google Assistant',
+      linkUrl: '/',
+      date: '25 May, 2021',
+      post: 'Alexa vs. Google Assistant is the Ali/Frazier of voice assistants. Both are backed by two of the heavyweights of tech, and both offer, on paper, many of the same features and functionality...',
+    },
+    {
+      _id: '2',
+      image: '/images/bodycam.jpg',
+      linkLabel: 'Do I need a Body Cam?',
+      linkUrl: '/',
+      date: '06 Jun, 2021',
+      post: 'Body cameras are primarily seen as one way to inspire accountability in police forces around the country. Such visible displays of transparency do affect the public perception and confidence of police...',
+    },
+    {
+      _id: '3',
+      image: '/images/airpod-max.jpg',
+      linkLabel: 'Airpods Max or Nah!',
+      linkUrl: '/',
+      date: '07 July, 2021',
+      post: "AirPods Max are Apple's high-end wireless over-ear headphones, featuring Active Noise Cancellation, Transparency Mode, Adaptive EQ, and spatial audio, in a range of color option...",
+    },
   ],
 };
 export default data;
