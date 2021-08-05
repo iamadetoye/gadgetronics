@@ -15,6 +15,9 @@ import Main from '../../components/Main/Main';
 import data from '../../data';
 import SmartGadgets from '../../components/SmartGadgets/SmartGadgets';
 import Blog from '../../components/Blog/Blog';
+import Subscribe from '../../components/Subscribe/Subscribe';
+import Footer from '../../components/Footer/Footer';
+import Logo from '../../components/Logo/Logo';
 
 const HomePage = () => {
   return (
@@ -28,13 +31,10 @@ const HomePage = () => {
       {/* Header */}
       <Header>
         <Wrapper>
-          <LogoBox>
-            <img src={data.logo} alt="logo" />
-            <LogoDescription>
-              <p>Gadgetronics</p>
-              <span>No.1 for Gadgets and electronics</span>
-            </LogoDescription>
-          </LogoBox>
+          {/* /////////// */}
+          <Logo />
+
+          {/* /////////// */}
 
           <HeaderItems />
         </Wrapper>
@@ -54,9 +54,12 @@ const HomePage = () => {
       </Search>
 
       <Main />
-      <SmartGadgets/>
+      <SmartGadgets />
       <Blog />
-      <Main />
+      <Subscribe />
+
+      <Footer />
+      {/* <Main /> */}
     </div>
   );
 };

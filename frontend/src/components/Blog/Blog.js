@@ -12,7 +12,7 @@ const Blog = () => {
             Blog
             <span>
               Stay updated with the tech world by regularly checking
-              GADGETRONICS’ weekly blog posts.
+              <a href="/"> GADGETRONICS’ </a> weekly blog posts.
             </span>
           </h3>
 
@@ -22,7 +22,9 @@ const Blog = () => {
           {data.blogPosts.map((blogPost) => (
             <BlogPost key={blogPost._id}>
               <img src={blogPost.image} alt={blogPost.linkLabel} />
-              <a href={blogPost.linkUrl}>{blogPost.linkLabel}</a>
+              <h4>
+                <a href={blogPost.linkUrl}>{blogPost.linkLabel}</a>
+              </h4>
               <span>{blogPost.date}</span>
               <blockquote>{blogPost.post}</blockquote>
             </BlogPost>

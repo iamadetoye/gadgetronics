@@ -14,9 +14,11 @@ export const SmartHeading = styled.div`
   h3 {
     font-family: var(--font-heading);
     font-weight: 900;
+    font-size: 2.4rem;
+
   }
   span {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     width: 85%;
 
     font-weight: 400;

@@ -215,7 +215,7 @@ const data = {
       linkLabel: 'Do I need a Body Cam?',
       linkUrl: '/',
       date: '06 Jun, 2021',
-      post: 'Body cameras are primarily seen as one way to inspire accountability in police forces around the country. Such visible displays of transparency do affect the public perception and confidence of police...',
+      post: 'Body camera is primarily seen as one way to inspire accountability in police forces around the country. Such visible displays of transparency affects the public perception and confidence...'
     },
     {
       _id: '3',
@@ -223,7 +223,7 @@ const data = {
       linkLabel: 'Airpods Max or Nah!',
       linkUrl: '/',
       date: '07 July, 2021',
-      post: "AirPods Max are Apple's high-end wireless over-ear headphones, featuring Active Noise Cancellation, Transparency Mode, Adaptive EQ, and spatial audio, in a range of color option...",
+      post: "AirPods Max are Apple's high-end wireless over-ear headphones, featuring Noise Cancellation, Transparency Mode, Adaptive EQ, and spatial audio, in a range of...",
     },
   ],
 };
