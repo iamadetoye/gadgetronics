@@ -1,7 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
 import data from '../../data';
-import { Wrapper } from '../../pages/HomePage/HomePage.styles';
 import './SmartGadgets.styles';
 import {
   SmartGadgetsBox,
@@ -9,6 +8,7 @@ import {
   SmartBoxes,
   SmartImage,
   SmartDetails,
+  SmartWrapper,
   SmartHeading,
   IconBox,
 } from './SmartGadgets.styles';
@@ -16,7 +16,7 @@ import {
 const SmartGadgets = () => {
   return (
     <SmartGadgetsBox>
-      <Wrapper>
+      <SmartWrapper>
         <SmartHeading>
           <h3>
             Smart Gadgets
@@ -27,8 +27,8 @@ const SmartGadgets = () => {
           </h3>
 
           <IconBox>
-            <Icon icon="akar-icons:chevron-left" />
-            <Icon icon="akar-icons:chevron-right" />
+            <Icon icon="eva:arrow-ios-back-fill" />
+            <Icon icon="eva:arrow-ios-forward-fill" />
           </IconBox>
         </SmartHeading>
 
@@ -53,15 +53,13 @@ const SmartGadgets = () => {
             </SmartBox>
           ))}
         </SmartBoxes>
-      </Wrapper>
+        <IconBox>
+          <Icon icon="eva:arrow-ios-back-fill" />
+          <Icon icon="eva:arrow-ios-forward-fill" />
+        </IconBox>
+      </SmartWrapper>
     </SmartGadgetsBox>
   );
 };
 
 export default SmartGadgets;
-
-//    {
-//     title: 'Smart Gadgets',
-//     description:
-//       'Day in day-out gadgets to make life easier and a better place for everyone.',
-//   },

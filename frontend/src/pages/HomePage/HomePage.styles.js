@@ -1,75 +1,36 @@
 import styled from 'styled-components';
 
+export const Home = styled.div`
+  max-width: 200rem;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--color-light-bg);
+`;
 export const Wrapper = styled.div`
   display: grid;
-  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   grid-template-columns: repeat(12, 1fr);
-  /* grid-gap: 10px; */
-  align-content: space-evenly;
   max-width: 1200px;
   margin: auto;
   height: 100%;
 `;
 export const InfoHeading = styled.div`
-  text-transform: uppercase;
-  /* text-align: center; */
-  height: 3rem;
-  font-weight: 700;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-weight: 400;
   display: flex;
   p {
     margin: auto;
   }
   a {
     color: var(--color-brand);
+    font-weight: 700;
 
     &:hover {
       color: var(--color-brand-dark);
+      text-decoration: underline;
     }
-  }
-`;
-export const Header = styled.header`
-  background-color: var(--color-white);
-  height: 10rem;
-`;
-
-/////////////////
-//Search
-////////////////////
-
-export const Search = styled.div`
-  margin: 0.5rem 0;
-  button {
-    &:first-of-type {
-      grid-column: 1/2;
-    }
-    &:last-of-type {
-      grid-column: 12/13;
-    }
-  }
-  input {
-    position: relative;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 1.4rem;
-    font-family: inherit;
-    font-weight: bolder;
-    color: var(--color-grey-dark);
-
-    &:first-of-type {
-      grid-column: 2/7;
-      margin-right: 0.1rem;
-    }
-    &:nth-of-type(2) {
-      grid-column: 7/12;
-      padding-right: 6.5rem;
-      margin-left: 0.1rem;
-      margin-right: -2rem;
-    }
-  }
-  svg {
-    height: 25px;
-    width: 25px;
   }
 `;
 
@@ -85,6 +46,7 @@ export const Main = styled.div`
 //Hero
 ////////////////////
 export const HeroSection = styled.div`
+  padding-left: 3rem;
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -107,4 +69,3 @@ export const AsideHero = styled.div`
   background-color: green;
   margin-left: 1.5rem;
 `;
-export const Trending = styled.div``;

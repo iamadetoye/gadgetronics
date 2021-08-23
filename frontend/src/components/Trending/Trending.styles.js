@@ -4,6 +4,10 @@ export const TrendingBox = styled.div`
   grid-column: 1/13;
 
   min-height: 40rem;
+
+  @media only screen and (max-width: 750px) {
+    padding: 2rem;
+  }
 `;
 export const Heading = styled.div`
   h2 {
@@ -31,18 +35,27 @@ export const TrendsBox = styled.div`
   flex-wrap: wrap;
 `;
 export const TrendBox = styled.div`
-  /* background-color: grey; */
+  background-color: var(--color-white);
   border-radius: 1rem;
-  box-shadow: 0px 2px 5px 0 var(--color-grey-light);
+  box-shadow: 0px 2px 5px 0 var(--color-grey-dark);
+  /* box-shadow: var(--color-trend-shadow); */
+
+  
   height: 12rem;
   width: 32.5%;
   margin: 0 auto;
   display: flex;
   cursor: pointer;
 
+  @media only screen and (max-width: 900px) {
+    width: 49%;
+  }
+  @media only screen and (max-width: 570px) {
+    width: 48%;
+  }
+
   span {
     font-weight: 700;
-    font-size: 1.8rem;
     margin: auto 1rem;
   }
   img {
@@ -55,7 +68,8 @@ export const TrendBox = styled.div`
 
   &:hover {
     color: var(--color-brand);
-    background-color: var(--color-hover-bg);
-    box-shadow: 0px 5px 5px 0 var(--color-grey-light);
+    background: var(--color-hover-bg);
+    box-shadow: 0px 5px 5px 0 var(--color-grey-light-2);
+
   }
 `;

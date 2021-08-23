@@ -1,46 +1,86 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import { Wrapper } from '../../pages/HomePage/HomePage.styles';
+import data from '../../data';
 import Logo from '../Logo/Logo';
-import { FooterBox, FooterItem } from './Footer.styles';
+import {
+  FooterBox,
+  Socials,
+  WrapFoot,
+  BrandItems,
+  QuickLinks,
+  OurApps,
+  Partners,
+  Contact,
+  PostFooter,
+} from './Footer.styles';
 
 const Footer = () => {
   return (
     <FooterBox>
-      <Wrapper>
-        <FooterItem>
+      <WrapFoot>
+        <BrandItems>
           <Logo />
-          <li>FooterItemFooterItem</li>
-          <li>FooterItemFooterItem</li>
-        </FooterItem>
-        <FooterItem>
+          <li>
+            Social links:
+            <Socials>
+              <Icon icon="ph:medium-logo-fill" />
+              <Icon icon="akar-icons:twitter-fill" />
+              <Icon icon="ph:instagram-logo-bold" />
+              <Icon icon="brandico:facebook" />
+            </Socials>
+          </li>
+          <li>
+            Official partners
+            <Partners>
+              <Icon icon="logos:visa" />
+              <Icon icon="logos:stripe" />
+              <Icon icon="grommet-icons:mastercard" />
+              <Icon icon="file-icons:apple" />
+            </Partners>
+          </li>
+        </BrandItems>
+        <QuickLinks>
           <h3>Quick Links</h3>
           <li>Trending</li>
-          <li>GAdgets Blog</li>
+          <li>Gadgets Blog</li>
           <li>Cart</li>
           <li>Checkout</li>
           <li>Products</li>
-        </FooterItem>
-        <FooterItem>
+        </QuickLinks>
+        <OurApps>
           <h3>Our Apps</h3>
-          <svg/>
-        </FooterItem>
-        <FooterItem>
+          {data.apps.map((img) => (
+            <li key={img._id}>
+              <a href={img.link}>
+                <img src={img.image} alt={img.key} />
+              </a>
+            </li>
+          ))}
+        </OurApps>
+        <Contact>
           <h3>Contact</h3>
+
           <li>
-            <Icon />
+            <Icon icon="eva:pin-fill" />
             77 Adetoye Street, Lagos, Nigeria
           </li>
           <li>
-            <Icon />
+            <Icon icon="bx:bx-time" />
             Monday - Saturday, 8:30am - 10:00pm
           </li>
           <li>
-            <Icon />
+            <Icon icon="fluent:call-24-filled" />
             +234 (0) 816 782 0935
           </li>
-        </FooterItem>
-      </Wrapper>
+        </Contact>
+      </WrapFoot>
+
+      <PostFooter>
+        <p>
+          © <a href="/"> Gadgetronics</a> by
+          <a href="/"> Abdullahi Adetoye Mustapha</a> | 2021
+        </p>
+      </PostFooter>
     </FooterBox>
   );
 };

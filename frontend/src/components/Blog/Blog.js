@@ -1,12 +1,20 @@
 import React from 'react';
 import data from '../../data';
-import { Wrapper } from '../../pages/HomePage/HomePage.styles';
-import { BlogSection, BlogHeading, BlogPosts, BlogPost } from './Blog.styles';
+
+import {
+  BlogSection,
+  BlogHeading,
+  BlogPosts,
+  BlogPost,
+  BlogWrapper,
+  BlogMore,
+  BlogMore2,
+} from './Blog.styles';
 
 const Blog = () => {
   return (
     <BlogSection>
-      <Wrapper>
+      <BlogWrapper>
         <BlogHeading>
           <h3>
             Blog
@@ -16,7 +24,7 @@ const Blog = () => {
             </span>
           </h3>
 
-          <a href="/">View More</a>
+          <BlogMore href="/">View More</BlogMore>
         </BlogHeading>
         <BlogPosts>
           {data.blogPosts.map((blogPost) => (
@@ -30,7 +38,9 @@ const Blog = () => {
             </BlogPost>
           ))}
         </BlogPosts>
-      </Wrapper>
+
+        <BlogMore2 href="/">View More</BlogMore2>
+      </BlogWrapper>
     </BlogSection>
   );
 };

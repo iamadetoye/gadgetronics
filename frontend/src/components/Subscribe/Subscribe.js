@@ -1,11 +1,10 @@
 import React from 'react';
-import { Wrapper } from '../../pages/HomePage/HomePage.styles';
-import { InputEmail, SubscribeBox } from './Subscribe.styles';
+import { InputEmail, SubscribeBox, SubWrapper } from './Subscribe.styles';
 
 const Subscribe = () => {
   return (
     <SubscribeBox>
-      <Wrapper>
+      <SubWrapper>
         <p>
           Subscribe to get updates about our latest products and tech updates
           right in your email
@@ -16,7 +15,7 @@ const Subscribe = () => {
             Subscribe
           </button>
         </form>
-      </Wrapper>
+      </SubWrapper>
     </SubscribeBox>
   );
 };

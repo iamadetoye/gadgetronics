@@ -1,66 +1,34 @@
 import React from 'react';
-import { Icon } from '@iconify/react';
 import {
-  Header,
-  InfoHeading,
-  LogoBox,
-  LogoDescription,
-  Wrapper,
-  Search,
+  // InfoHeading,
+  Home,
 } from './HomePage.styles';
 
-import Icons from '../../components/Icons/Icons';
-import HeaderItems from '../../components/HeaderItems/HeaderItems';
 import Main from '../../components/Main/Main';
-import data from '../../data';
 import SmartGadgets from '../../components/SmartGadgets/SmartGadgets';
 import Blog from '../../components/Blog/Blog';
 import Subscribe from '../../components/Subscribe/Subscribe';
-import Footer from '../../components/Footer/Footer';
-import Logo from '../../components/Logo/Logo';
+
 
 const HomePage = () => {
   return (
-    <div>
-      <InfoHeading>
+    <Home>
+      {/* <InfoHeading>
         <p>
           How was your experience with us? We’ll love to improve to serve you.
           Click <a href="/">here</a> to let us know
         </p>
-      </InfoHeading>
+      </InfoHeading> */}
       {/* Header */}
-      <Header>
-        <Wrapper>
-          {/* /////////// */}
-          <Logo />
 
-          {/* /////////// */}
-
-          <HeaderItems />
-        </Wrapper>
-      </Header>
-      <Search>
-        <Wrapper>
-          <button className="leftRoundedButton">
-            Categories <Icon className="normalIcon" icon={Icons.menu} />
-          </button>
-          <input type="search" placeholder="Search products and categories" />
-          <input type="select" placeholder="Select brand"></input>
-          <button className="roundedButton">
-            <Icon className="normalIcon" icon={Icons.search} />
-            Search
-          </button>
-        </Wrapper>
-      </Search>
+     
 
       <Main />
       <SmartGadgets />
       <Blog />
       <Subscribe />
 
-      <Footer />
-      {/* <Main /> */}
-    </div>
+    </Home>
   );
 };
 

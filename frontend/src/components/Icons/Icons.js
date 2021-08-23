@@ -12,3 +12,13 @@ const Icons = {
 };
 
 export default Icons;
+
+
+
+/////////////
+//ph:medium-logo-fill
+//ph:instagram-logo-bold
+//logos:visa
+//logos:stripe
+//grommet-icons:mastercard
+//akar-icons:twitter-fill
